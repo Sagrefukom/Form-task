@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <section class="section">
+    <section>
         <div class="container">
             <div class="container__content content">
                 <div class="content__title">
@@ -20,9 +20,9 @@
                     <div class="header__icon">
                         <img class="header__icon-item" src="./img/compose-icon.png" alt="">
                     </div>
-                    <div class="header__title">
+                    <h1 class="header__title">
                         Login To Your Account / Register New
-                    </div>
+                    </h1>
                 </div>
                 <div class="content__wrapper wrapper">
                     <form class="wrapper__form form" action="#">
@@ -38,7 +38,7 @@
                                     You no longer need to enter
                                         a password every time you use the site
                                 </div>
-                                <input type="checkbox" name="help">
+                                <input id="help" type="checkbox" name="help">
                                 <label class="form__label form__label--help" for="help">Remember My password</label>
                             </div>
                             <button class="form__btn btn btn--login" type="submit">Login</button> 
@@ -48,13 +48,13 @@
                         <div class="form__title">
                             Register
                         </div>
-                        <label class="form__label" for="email">Email</label>
+                        <label class="form__label" for="input-email">Email</label>
                         <input id="input-email" class="form__input form__input--register" type="email" name="email" oninput="check()">
         
-                        <label class="form__label" for="name">User Name</label>
+                        <label class="form__label" for="input-name">User Name</label>
                         <input id="input-name" class="form__input form__input--register" type="text" name="name" oninput="check()">
         
-                        <label class="form__label" for="password">Password</label>
+                        <label class="form__label" for="input-password">Password</label>
                         <input id="input-password" class="form__input form__input--register" type="password" name="password" oninput="check()">
         
                         <button class="form__btn btn btn--register" type="submit">Register</button> 
