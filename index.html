@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whidegroup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="container__content content">
+                <div class="content__title">
+                    Login To Your Account / Register New
+                </div>
+                <div class="content__header header">
+                    <div class="header__icon">
+                        <img class="header__icon-item" src="./img/compose-icon.png" alt="">
+                    </div>
+                    <div class="header__title">
+                        Login To Your Account / Register New
+                    </div>
+                </div>
+                <div class="content__wrapper wrapper">
+                    <form class="wrapper__form form" action="#">
+                        <div class="form__img">
+                            <span class="form__img-item">/</span>
+                        </div>
+                        <input class="form__input form__input--login" type="text" placeholder="User Name">
+                        <input class="form__input form__input--login" type="password" placeholder="Password">
+                        <div class="form__help">
+                            
+                            <div class="form__item">
+                                <div class="form__item-hover">
+                                    You no longer need to enter
+                                        a password every time you use the site
+                                </div>
+                                <input type="checkbox" name="help">
+                                <label class="form__label form__label--help" for="help">Remember My password</label>
+                            </div>
+                            <button class="form__btn btn btn--login" type="submit">Login</button> 
+                        </div>
+                    </form>
+                    <form class="wrapper__form form" action="#">
+                        <div class="form__title">
+                            Register
+                        </div>
+                        <label class="form__label" for="email">Email</label>
+                        <input id="input-email" class="form__input form__input--register" type="email" name="email" oninput="check()">
+        
+                        <label class="form__label" for="name">User Name</label>
+                        <input id="input-name" class="form__input form__input--register" type="text" name="name" oninput="check()">
+        
+                        <label class="form__label" for="password">Password</label>
+                        <input id="input-password" class="form__input form__input--register" type="password" name="password" oninput="check()">
+        
+                        <button class="form__btn btn btn--register" type="submit">Register</button> 
+                    </form>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
