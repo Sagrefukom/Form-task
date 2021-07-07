@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <section>
+    <section class="section">
         <div class="container">
             <div class="container__content content">
                 <div class="content__title">
@@ -29,8 +29,14 @@
                         <div class="form__img">
                             <span class="form__img-item">/</span>
                         </div>
-                        <input class="form__input form__input--login" type="text" placeholder="User Name">
-                        <input class="form__input form__input--login" type="password" placeholder="Password">
+                       <div class="form-control">
+                        <input id="input-name-login" class="form__input form__input--login" type="text" placeholder="User Name" oninput="check()">
+                        <small>Error message</small>
+                       </div>
+                       <div class="form-control">
+                        <input id="input-password-login" class="form__input form__input--login" type="password" placeholder="Password" oninput="check()">
+                        <small>Error message</small>
+                       </div>
                         <div class="form__help">
                             
                             <div class="form__item">
@@ -48,14 +54,30 @@
                         <div class="form__title">
                             Register
                         </div>
-                        <label class="form__label" for="input-email">Email</label>
-                        <input id="input-email" class="form__input form__input--register" type="email" name="email" oninput="check()">
+                        <div class="form-control">
+                            <label class="form__label" for="input-email">Email</label>
+                            <input id="input-email" class="form__input form__input--register" type="email" name="email" oninput="check()">
+                            <small>Error message</small>
+
+                            <img class="success" src="./img/check_icon.jpg" alt="">
+                            <img class="error" src="./img/warning_icon.jpg" alt="">
+                        </div>
         
-                        <label class="form__label" for="input-name">User Name</label>
-                        <input id="input-name" class="form__input form__input--register" type="text" name="name" oninput="check()">
+                        <div class="form-control">
+                            <label class="form__label" for="input-name">User Name</label>
+                            <input id="input-name" class="form__input form__input--register" type="text" name="name" oninput="check()">
+                            <small>Error message</small>
+
+                            <img class="success" src="./img/check_icon.jpg" alt="">
+                            <img class="error" src="./img/warning_icon.jpg" alt="">
+
+                        </div>
         
-                        <label class="form__label" for="input-password">Password</label>
-                        <input id="input-password" class="form__input form__input--register" type="password" name="password" oninput="check()">
+                        <div class="form-control">
+                            <label class="form__label" for="input-password">Password</label>
+                            <input id="input-password" class="form__input form__input--register" type="password" name="password" oninput="check()">
+                            <small>Error message</small>
+                        </div>
         
                         <button class="form__btn btn btn--register" type="submit">Register</button> 
                     </form>
